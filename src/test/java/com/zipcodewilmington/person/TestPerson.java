@@ -50,6 +50,21 @@ public class TestPerson {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testConstructorWithHairProducts(){
+        // Given
+        Long expected = 5L;
+
+        //When
+        Person person = new Person(expected);
+
+        //Then
+        Long actual = person.getHairProducts();
+        Assert.assertEquals(expected, actual);
+
+
+    }
+
 
     @Test
     public void testConstructorWithNameAndAge() {
